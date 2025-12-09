@@ -23,7 +23,7 @@
 ### => Once we know the byte position to calculate, we just need to change the byte position of the state matrix to multiply by the byte of the fixed matrix (I know what I say will be difficult to understand, you can refer to the design to visualize better).
 ## 5. Key Expansion: 
 ### * 5.1: About Rcons: I will design each one separately and package it because we only need 10 Rcons.
-### * 5.2: In my designs, I have to create 10 Key Expansions for each key after each round because the total pins of Quartus is only 475, if we design Key Expansion in just 1 design, it won't be enough.
+### * 5.2: In my design, I have to create 10 Key Expansions for each key after each round because the total pins of Quartus is only 475, if we design Key Expansion in just 1 design, it won't be enough.
 <img width="574" height="319" alt="image" src="https://github.com/user-attachments/assets/ebf573be-8b2f-4ea8-a1cf-5d061d8f09e7" />
 
 ## 6. 
