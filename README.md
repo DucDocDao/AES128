@@ -1,4 +1,32 @@
-# Đang cập nhật Vietnamese...
+# Mình hi vọng các bạn đều đã biết về AES128 nên mình sẽ tập trung hơn vào thiết kế và ý tưởng!
+## 1. AddRoundKey: ta chỉ cần XOR dữ liệu với từng khóa mã tương ứng, nó rất dễ nên mình nghĩ ai cũng sẽ làm được dễ dàng!
+
+## 2. SubBytes:
+### * Tạo S_box: *
+#### -> Bạn cần tạo một file .mif đã có sẵn tất cả các giá trị S_box, bạn có thể tìm thấy dễ dàng trên Internet vì mình cũng không nhớ mình tìm được nó ở đâu =)), hoặc bạn có thể tự tạo một file .mif từ Notepad và thêm tất cả các giá trị vào nhưng cách này cũng làm tốn thời gian nhiều hơn!
+<img width="640" height="320" alt="image" src="https://github.com/user-attachments/assets/430405a3-498c-469f-9d62-2097796893e6" />
+
+#### -> Sau đó, tạo một ROM 1-port kích thước 8 bits x 256 words từ Megawizard Plug-in Manager và trích dữ liệu từ file sbox.mif bạn mới tạo ở trên, nhớ đóng gói thiết kế lại.
+## 3. ShiftRows: Chỉ cần nối các bytes của input tương ứng với bytes của output cần xoay, vẫn rất dễ he!
+## 4. MixColumn:
+### * 4.1: Thay vì phải dịch trái 1 bit trong phép nhân với 02, ta có thể sử dụng bộ cộng 8-bit, sau đó tổng sẽ bằng giá trị cần dịch cộng với chính nó và ta chỉ lấy 8 bits trong tổng. Các bạn có thể thử vài ví dụ để thấy vì sao nó đúng nhé!
+### * 4.2: Thay vì phải tạo một file .mif khác để lưu giá trị của các ma trận cố định (điều này chỉ tốn thêm tài nguyên phần cứng hơn), ta thấy rằng ở các hàng của ma trận cố định, giá trị 02 luôn xuất hiện 1 lần, giá trị 03 luôn xuất hiện 1 lần và giá trị 01 là 2 lần, các hàng chỉ khác nhau ở vị trí của các giá trị.
+### * Ví dụ:
+<img width="511" height="179" alt="image" src="https://github.com/user-attachments/assets/0d72cb01-2fae-4862-b976-863fe9ddae13" />
+
+#### Để tính được 04, ta cần có: 02.d4 trong phép tính.
+#### Để tính được 66, ta cần có: 02.bf trong phép tính.
+#### Để tính được 81, ta cần có: 02.5d trong phép tính.
+#### Để tính được e5, ta cần có: 02.30 trong phép tính.
+#### Tương tự với 03 và 01.
+### => Một khi đã biết vị trí của các byte cần tính, ta chỉ cần đổi vị trí các byte của ma trận trạng thái nhân với byte của ma trận cố định (Mình biết những gì mình nói nghe khá khó hiểu, các bạn có thể tham khảo thiết kế để hình dung dễ hơn).
+## 5. Key Expansion:
+### * 5.1: Về Rcons: Mình tự thiết kế từng cái một và đóng gói vì ta chỉ cần 10 Rcons.
+### * 5.2: Trong thiết kế của mình, mình phải thiết kế 10 Key Expansions cho từng khóa sau mỗi vòng vì số lượng pin tối đa của Quartus chỉ là 475, nếu chỉ thiết kế Key Expansion chỉ trong một thiết kế thì sẽ không đủ.
+<img width="574" height="319" alt="image" src="https://github.com/user-attachments/assets/ebf573be-8b2f-4ea8-a1cf-5d061d8f09e7" />
+
+
+
 # I hope you guys all know about AES128, so I will focus more on the design and idea!
 ## 1. AddRoundKey: we just only have to XOR the data and the corresponding encryption key, it's very simple so I think everyone can do it easily!
 
