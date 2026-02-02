@@ -25,7 +25,12 @@
 ### * 5.2: Trong thiết kế của mình, mình phải thiết kế 10 Key Expansions cho từng khóa sau mỗi vòng vì số lượng pin tối đa của Quartus chỉ là 475, nếu chỉ thiết kế Key Expansion chỉ trong một thiết kế thì sẽ không đủ.
 <img width="574" height="319" alt="image" src="https://github.com/user-attachments/assets/ebf573be-8b2f-4ea8-a1cf-5d061d8f09e7" />
 
+## 6. 
+### * 6.1: Counter-4-bit: để đếm tới vòng cuối cùng của thuật toán là 10: quyết định khi nào là kết quả cuối cùng.
+### * 6.2: Start = 1: bắt đầu nạp dữ liệu và khóa vào thiết kế để mã hóa.
+### * 6.3: Done = 1: kết thúc thuật toán (Counter đếm tới 10).
 
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # I hope you guys all know about AES128, so I will focus more on the design and idea!
 ## 1. AddRoundKey: we just only have to XOR the data and the corresponding encryption key, it's very simple so I think everyone can do it easily!
@@ -56,5 +61,5 @@
 
 ## 6. 
 ### * 6.1: Counter-4-bit: to count to 10, which is the last round of the algorithm: decides when the last result will be received.
-### * 6.2: Start = 1: starts loading data and keys into the algorithm for encryption.
+### * 6.2: Start = 1: starts loading data and keys into the design for encryption.
 ### * 6.3: Done = 1: end of algorithm (Counter counts to 10).
