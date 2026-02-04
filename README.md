@@ -25,9 +25,9 @@
 <img width="574" height="319" alt="image" src="https://github.com/user-attachments/assets/ebf573be-8b2f-4ea8-a1cf-5d061d8f09e7" />
 
 ## 6. 
-### * 6.1: Counter-4-bit: để đếm tới vòng cuối cùng của thuật toán là 10: quyết định khi nào là kết quả cuối cùng.
+### * 6.1: Bộ đếm lên 4 bit: để đếm tới vòng cuối cùng của thuật toán là 10: quyết định khi nào là kết quả cuối cùng.
 ### * 6.2: Start = 1: bắt đầu nạp dữ liệu và khóa vào thiết kế để mã hóa.
-### * 6.3: Done = 1: kết thúc thuật toán (Counter đếm tới 10).
+### * 6.3: Done = 1: kết thúc thuật toán (bộ đếm đếm tới 10).
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
