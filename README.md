@@ -1,4 +1,3 @@
-# Mình hi vọng các bạn đều đã biết về AES128 nên mình sẽ tập trung hơn vào thiết kế và ý tưởng!
 ## 1. AddRoundKey: ta chỉ cần XOR dữ liệu với từng khóa mã tương ứng, nó rất dễ nên mình nghĩ ai cũng sẽ làm được dễ dàng!
 
 ## 2. SubBytes:
