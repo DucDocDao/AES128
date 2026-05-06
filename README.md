@@ -33,7 +33,7 @@
 
 -> Similar to 03 and 01.
 
-=> Once we know the byte position to calculate, we just need to change the byte position of the state matrix to multiply by the byte of the fixed matrix (I know what I say will be difficult to understand, you can refer to the design to visualize better).
+=> Once we know the byte position to calculate, we just need to change the byte position of the state matrix to multiply by the byte of the fixed matrix.
 
 5️⃣ ***Key Expansion***: 
 
