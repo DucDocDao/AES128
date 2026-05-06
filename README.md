@@ -9,10 +9,12 @@
 #### -> After that, create a 1-port ROM of 8 bits x 256 words from Megawizard Plug-in Manager and access it from the sbox.mif file you just created, remember to package the design.
 ## 3️⃣ ShiftRows: Just concatenate the bytes of the input corresponding to the bytes of the output to be rotated, it's still very easy!
 ## 4️⃣ MixColumn: 
-### - Instead of shifting left 1 bit in the multiplication by 02, we can use an 8-bit full adder, then the sum will be equal to that value plus itself and we only take 8 bits in the sum. You can try some examples to prove it!
-### - Instead of creating an additional .mif file to save the values ​​of the fixed matrix (this will just waste hardware resources), we see that in the rows of the fixed matrix, the value 02 always appears once,  the value 03 once and the value 01 twice, the rows only differ in the position of the values.
+### - Instead of shifting left 1 bit in the multiplication by 02, we can use an 8-bit full adder, then the sum will be equal to that value plus itself and we only take 8 bits in the sum. 
+      You can try some examples to prove it!
+### - Instead of creating an additional .mif file to save the values ​​of the fixed matrix (this will just waste hardware resources), we see that in the rows of the fixed matrix, 
+      the value 02 always appears once,  the value 03 once and the value 01 twice, the rows only differ in the position of the values.
 ### - Example:
-<img width="511" height="179" alt="image" src="https://github.com/user-attachments/assets/0d72cb01-2fae-4862-b976-863fe9ddae13" />
+      <img width="511" height="179" alt="image" src="https://github.com/user-attachments/assets/0d72cb01-2fae-4862-b976-863fe9ddae13" />
 
 #### To calculate 04, we need: 02.d4 in the calculation.
 #### To calculate 66, we need: 02.bf in the calculation.
