@@ -1,4 +1,4 @@
-# 🧠 I hope you guys all know about AES128, so I will focus more on the design and idea! 🧠
+# 🧠 Designs and ideas 🧠
 1️⃣ ***AddRoundKey***: XOR the data and the corresponding encryption key!
 
 2️⃣ ***SubBytes***:
