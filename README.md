@@ -2,7 +2,7 @@
 1️⃣ ***AddRoundKey***: XOR the data and the corresponding encryption key!
 
 2️⃣ ***SubBytes***:
-### 🗃️ S_Box 🗃️:
+### 🗃️S_Box🗃️
 -> Creat a .mif file which already have all S_box values.
 
 <img width="640" height="320" alt="image" src="https://github.com/user-attachments/assets/430405a3-498c-469f-9d62-2097796893e6" />
@@ -14,7 +14,7 @@
 
 4️⃣ ***MixColumn***: 
 
-### 👋 Explanation👋:
+### 👋Explanation👋
 - Instead of shifting left 1 bit in the multiplication by 02, we can use an 8-bit full adder, then the sum will be equal to that value plus itself and we only take 8 bits in the sum.
   
 - Instead of creating an additional .mif file to save the values ​​of the fixed matrix (this will just waste hardware resources), we see that in the rows of the fixed matrix, the value 02 always appears once, the value 03 once and the value 01 twice, the rows only differ in the position of the values.
@@ -57,7 +57,7 @@
 
 2️⃣ ***SubBytes***:
 
-### 🗃️ S_box 🗃️: 
+### 🗃️S_box🗃️
 
 -> Bạn cần tạo một file .mif đã có sẵn tất cả các giá trị S_box, bạn có thể tìm thấy dễ dàng trên Internet vì mình cũng không nhớ mình tìm được nó ở đâu =)), hoặc bạn có thể tự tạo một file .mif từ Notepad và thêm tất cả các giá trị vào nhưng cách này cũng làm tốn thời gian nhiều hơn!
 
@@ -70,7 +70,7 @@
 
 4️⃣ ***MixColumn***:
 
-### 👋 Giải thích 👋:
+### 👋Giải thích👋
 
 - Thay vì phải dịch trái 1 bit trong phép nhân với 02, ta có thể sử dụng bộ cộng 8-bit, sau đó tổng sẽ bằng giá trị cần dịch cộng với chính nó và ta chỉ lấy 8 bits trong tổng. Các bạn có thể thử vài ví dụ để thấy vì sao nó đúng nhé!
   
