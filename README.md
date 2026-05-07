@@ -23,13 +23,13 @@
 
 
 
-  To calculate 04, we need: 02.d4 in the calculation.
+   * To calculate 04, we need: 02.d4 in the calculation.
   
-  To calculate 66, we need: 02.bf in the calculation.
+   * To calculate 66, we need: 02.bf in the calculation.
   
-  To calculate 81, we need: 02.5d in the calculation.
+   * To calculate 81, we need: 02.5d in the calculation.
   
-  To calculate e5, we need: 02.30 in the calculation.
+   * To calculate e5, we need: 02.30 in the calculation.
 
 -> Similar to 03 and 01.
 
@@ -79,13 +79,13 @@
 - Ví dụ: <img width="511" height="179" alt="image" src="https://github.com/user-attachments/assets/0d72cb01-2fae-4862-b976-863fe9ddae13" />
 
 
-    Để tính được 04, ta cần có: 02.d4 trong phép tính.
+   * Để tính được 04, ta cần có: 02.d4 trong phép tính.
   
-    Để tính được 66, ta cần có: 02.bf trong phép tính.
+   * Để tính được 66, ta cần có: 02.bf trong phép tính.
   
-    Để tính được 81, ta cần có: 02.5d trong phép tính.
+   * Để tính được 81, ta cần có: 02.5d trong phép tính.
   
-    Để tính được e5, ta cần có: 02.30 trong phép tính.
+   * Để tính được e5, ta cần có: 02.30 trong phép tính.
   
 -> Tương tự với 03 và 01.
 
