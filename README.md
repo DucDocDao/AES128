@@ -4,8 +4,11 @@
 2️⃣ ***SubBytes***:
 ### 🗃️S_Box🗃️
 -> Creat a .mif file which already have all S_box values.
-
-<img width="640" height="320" alt="image" src="https://github.com/user-attachments/assets/430405a3-498c-469f-9d62-2097796893e6" />
+  <p align="center">
+  <img width="640" height="320" alt="image" src="https://github.com/user-attachments/assets/430405a3-498c-469f-9d62-2097796893e6" />
+  <br>
+  <em>S_box values</em>
+  </p>
 
 
 -> Create a 1-port ROM of 8 bits x 256 words from Megawizard Plug-in Manager and access it from the sbox.mif file you just created, remember to package the design.
@@ -19,8 +22,11 @@
   
 - Instead of creating an additional .mif file to save the values ​​of the fixed matrix (this will just waste hardware resources), we see that in the rows of the fixed matrix, the value 02 always appears once, the value 03 once and the value 01 twice, the rows only differ in the position of the values.
   
-- Example: <img width="511" height="179" alt="image" src="https://github.com/user-attachments/assets/0d72cb01-2fae-4862-b976-863fe9ddae13" />
-
+- Example: 
+  <p align="center">
+  <img width="511" height="179" alt="image" src="https://github.com/user-attachments/assets/0d72cb01-2fae-4862-b976-863fe9ddae13" />
+  <br>
+  </p>
 
 
    * To calculate 04, we need: 02.d4 in the calculation.
@@ -40,8 +46,11 @@
 - __Rcons__: Design each one separately and package it because we only need 10 Rcons.
   
 - We have to create 10 Key Expansions for each key after each round because the total pins of Quartus is only 475.
-  
-<img width="574" height="319" alt="image" src="https://github.com/user-attachments/assets/ebf573be-8b2f-4ea8-a1cf-5d061d8f09e7" />
+  <p align="center">
+  <img width="574" height="319" alt="image" src="https://github.com/user-attachments/assets/ebf573be-8b2f-4ea8-a1cf-5d061d8f09e7" />
+  <br>
+  </p>
+
 
 
 6️⃣ ***Others***:
@@ -61,7 +70,11 @@
 
 -> Bạn cần tạo một file .mif đã có sẵn tất cả các giá trị S_box, bạn có thể tìm thấy dễ dàng trên Internet vì mình cũng không nhớ mình tìm được nó ở đâu =)), hoặc bạn có thể tự tạo một file .mif từ Notepad và thêm tất cả các giá trị vào nhưng cách này cũng làm tốn thời gian nhiều hơn!
 
-<img width="640" height="320" alt="image" src="https://github.com/user-attachments/assets/430405a3-498c-469f-9d62-2097796893e6" />
+  <p align="center">
+  <img width="640" height="320" alt="image" src="https://github.com/user-attachments/assets/430405a3-498c-469f-9d62-2097796893e6" />
+  <br>
+  <em>S_box values</em>
+  </p>
 
 
 -> Sau đó, tạo một ROM 1-port kích thước 8 bits x 256 words từ Megawizard Plug-in Manager và trích dữ liệu từ file sbox.mif bạn mới tạo ở trên, nhớ đóng gói thiết kế lại.
@@ -76,7 +89,11 @@
   
 - Thay vì phải tạo một file .mif khác để lưu giá trị của các ma trận cố định (điều này chỉ tốn thêm tài nguyên phần cứng hơn), ta thấy rằng ở các hàng của ma trận cố định, giá trị 02 luôn xuất hiện 1 lần, giá trị 03 luôn xuất hiện 1 lần và giá trị 01 là 2 lần, các hàng chỉ khác nhau ở vị trí của các giá trị.
   
-- Ví dụ: <img width="511" height="179" alt="image" src="https://github.com/user-attachments/assets/0d72cb01-2fae-4862-b976-863fe9ddae13" />
+- Ví dụ:
+  <p align="center">
+  <img width="511" height="179" alt="image" src="https://github.com/user-attachments/assets/0d72cb01-2fae-4862-b976-863fe9ddae13" />
+  <br>
+  </p>
 
 
    * Để tính được 04, ta cần có: 02.d4 trong phép tính.
@@ -96,7 +113,10 @@
 - __Rcons__: Mình tự thiết kế từng cái một và đóng gói vì ta chỉ cần 10 Rcons.
   
 - Trong thiết kế của mình, mình phải thiết kế 10 Key Expansions cho từng khóa sau mỗi vòng vì số lượng pin tối đa của Quartus chỉ là 475, nếu chỉ thiết kế Key Expansion chỉ trong một thiết kế thì sẽ không đủ.
-<img width="574" height="319" alt="image" src="https://github.com/user-attachments/assets/ebf573be-8b2f-4ea8-a1cf-5d061d8f09e7" />
+  <p align="center">
+  <img width="574" height="319" alt="image" src="https://github.com/user-attachments/assets/ebf573be-8b2f-4ea8-a1cf-5d061d8f09e7" />
+  <br>
+  </p>
 
 
 
