@@ -86,7 +86,7 @@ Concatenate the bytes of the input corresponding to the bytes of the output to b
 
 ---
 
-#🧠 Thiết kế và ý tưởng 🧠
+## 🧠 Thiết kế và ý tưởng 🧠
 
 ## 1️⃣ ***AddRoundKey*** 🔑⚡
 
